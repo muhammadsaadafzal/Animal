@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                                                   xmlns:app = "http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools = "http://schemas.android.com/tools"
+                                                   android:layout_width = "match_parent"
+                                                   android:layout_height = "match_parent"
+    >
+    
+    <ScrollView
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        tools:layout_editor_absoluteX = "1dp"
+        tools:layout_editor_absoluteY = "1dp"
+        >
+        
+        <LinearLayout
+            android:id = "@+id/linearLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginHorizontal = "20dp"
+            android:orientation = "vertical"
+            >
+            
+            <TextView
+                android:id = "@+id/heading"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "35dp"
+                android:fontFamily = "monospace"
+                android:text = "Add a Pet"
+                android:textAlignment = "textStart"
+                android:textAllCaps = "true"
+                android:textColor = "#2E2E2E"
+                android:textSize = "24sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                
+                />
+            
+            <ImageView
+                android:id = "@+id/image"
+                android:layout_width = "200dp"
+                android:layout_height = "200dp"
+                android:layout_gravity = "center"
+                android:layout_marginTop = "60dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:srcCompat = "@drawable/broken_image_190"
+                />
+            
+            <!-- <Button
+                android:id = "@+id/galleryBtn"
+                style = "@style/Widget.Material3.Button.TonalButton"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "10dp"
+                android:background = "#00a5ff"
+                android:backgroundTint = "#00a5ff"
+                android:drawableLeft = "@drawable/photo_white"
+                android:fontFamily = "monospace"
+                android:shadowColor = "#00a5ff"
+                android:text = "Select image from Gallery"
+                android:textAlignment = "center"
+                android:textAllCaps = "false"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                app:rippleColor = "#0085FF"
+                app:strokeColor = "#00a5ff"
+                /> -->
+            <Button
+                android:id = "@+id/galleryBtn"
+                style = "@style/Widget.Material3.Button.TonalButton"
+                android:layout_width = "match_parent"
+                android:layout_height = "55dp"
+                android:layout_marginTop = "15dp"
+                android:backgroundTint = "#000000"
+                android:drawableLeft = "@drawable/photo_white"
+                android:enabled = "true"
+                android:fontFamily = "monospace"
+                android:paddingVertical = "10dp"
+                android:text = "Select image from Gallery"
+                android:textAlignment = "center"
+                android:textAllCaps = "false"
+                android:textColor = "@android:color/white"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                app:cornerRadius = "06dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/password"
+                app:rippleColor = "#0085FF"
+                app:strokeColor = "@android:color/white"
+                />
+            
+            <!-- <Button
+                android:id = "@+id/captureBtn"
+                style = "@style/Widget.Material3.Button.TonalButton"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "10dp"
+                android:background = "#00a5ff"
+                android:backgroundTint = "#00a5ff"
+                android:drawableLeft = "@drawable/camera_white"
+                android:fontFamily = "monospace"
+                android:shadowColor = "#00a5ff"
+                android:text = "Capture image from Camera"
+                android:textAlignment = "center"
+                android:textAllCaps = "false"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                app:rippleColor = "#0085FF"
+                app:strokeColor = "#00a5ff"
+                /> -->
+            <Button
+                android:id = "@+id/captureBtn"
+                style = "@style/Widget.Material3.Button.TonalButton"
+                android:layout_width = "match_parent"
+                android:layout_height = "55dp"
+                android:layout_marginTop = "30dp"
+                android:backgroundTint = "#000000"
+                android:drawableLeft = "@drawable/camera_white"
+                android:enabled = "true"
+                android:fontFamily = "monospace"
+                android:paddingVertical = "10dp"
+                android:text = "Capture image from Camera"
+                android:textAlignment = "center"
+                android:textAllCaps = "false"
+                android:textColor = "@android:color/white"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                app:cornerRadius = "6dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/password"
+                app:rippleColor = "#0085FF"
+                app:strokeColor = "@android:color/white"
+                />
+            
+            <EditText
+                android:id = "@+id/petName"
+                android:layout_width = "match_parent"
+                android:layout_height = "50dp"
+                android:layout_marginTop = "15dp"
+                android:hint = "Pet Name"
+                />
+            
+            <EditText
+                android:id = "@+id/species"
+                android:layout_width = "match_parent"
+                android:layout_height = "50dp"
+                android:hint = "Species"
+                />
+            
+            <EditText
+                android:id = "@+id/breed"
+                android:layout_width = "match_parent"
+                android:layout_height = "50dp"
+                android:hint = "Breed"
+                />
+            
+            <TextView
+                android:id = "@+id/petType"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "15dp"
+                android:fontFamily = "monospace"
+                android:text = "Pet Type"
+                android:textAlignment = "textStart"
+                android:textAllCaps = "true"
+                android:textColor = "#2E2E2E"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                
+                />
+            
+            <RadioGroup
+                android:id = "@+id/type"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                >
+                
+                <RadioButton
+                    android:id = "@+id/cat"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:text = "Cat"
+                    />
+                
+                <RadioButton
+                    android:id = "@+id/dog"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:text = "Dog"
+                    />
+                
+                <RadioButton
+                    android:id = "@+id/other"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:text = "Other"
+                    />
+            </RadioGroup>
+            
+            <TextView
+                android:id = "@+id/dated"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "15dp"
+                android:fontFamily = "monospace"
+                android:text = "Date of Entry"
+                android:textAlignment = "textStart"
+                android:textAllCaps = "true"
+                android:textColor = "#2E2E2E"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                
+                />
+    
+            <DatePicker
+                android:id="@+id/date"
+                style="@android:style/Widget.DatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp" />
+            
+            <!-- <Button
+                android:id = "@+id/saveBtn"
+                style = "@style/Widget.Material3.Button.TonalButton"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "10dp"
+                android:background = "#00a5ff"
+                android:backgroundTint = "#00a5ff"
+                android:fontFamily = "monospace"
+                android:shadowColor = "#00a5ff"
+                android:text = "Save"
+                android:textAlignment = "center"
+                android:textAllCaps = "false"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                app:rippleColor = "#0085FF"
+                app:strokeColor = "#00a5ff"
+                /> -->
+            <Button
+                android:id = "@+id/saveBtn"
+                style = "@style/Widget.Material3.Button.TonalButton"
+                android:layout_width = "match_parent"
+                android:layout_height = "55dp"
+                android:layout_marginTop = "30dp"
+                android:backgroundTint = "#000000"
+                android:enabled = "true"
+                android:fontFamily = "monospace"
+                android:paddingVertical = "10dp"
+                android:text = "Save"
+                android:textAlignment = "center"
+                android:textAllCaps = "false"
+                android:textColor = "@android:color/white"
+                android:textSize = "16sp"
+                android:textStyle = "bold"
+                android:typeface = "monospace"
+                app:cornerRadius = "6dp"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/password"
+                app:rippleColor = "#0085FF"
+                app:strokeColor = "@android:color/white"
+                />
+        
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
